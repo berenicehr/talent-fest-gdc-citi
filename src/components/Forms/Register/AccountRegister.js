@@ -21,22 +21,22 @@ const AccountRegister = ({
 
   return (
     <>
-      <h1 className="entry-question"> ¿Qué deseas hacer?</h1>
+      <h1 className="entry-question zoom-fx"> ¿Qué deseas hacer?</h1>
       <hr />
       <section className="container-saider-form">
         <SideBar />
         <form className="all-form" onSubmit={(e)=> {
           sendData(e)
         navigate('/services/verification')}}>
-          <h1>Alta de cuenta Citibanamex</h1>
-          <p>Indica los datos del alta y da click en "Continuar</p>
+          <h1 className="zoom-fx">Alta de cuenta Citibanamex</h1>
+          <p className="zoom-fx" >Indica los datos del alta y da click en "Continuar</p>
           <br />
           <br />
           <div className="container">
             <div className="col-md-5">
-              <label>¿Qué dato tienes de la cuenta para darla de alta?</label>
+              <label className="zoom-fx">¿Qué dato tienes de la cuenta para darla de alta?</label>
               <select
-                className="form-select"
+                className="form-select zoom-fx"
                 id="inputGroupSelect01"
                 placeholder="Tarjeta de debito o crédito"
                 name="name"
@@ -51,9 +51,9 @@ const AccountRegister = ({
               </select>
             </div>
             <br />
-            <p className="pLabels">Numero de tarjeta:</p>
+            <p className="pLabels zoom-fx">Numero de tarjeta:</p>
             <input
-              className="form-control"
+              className="form-control zoom-fx"
               type="text"
               name="displayAccountNumber"
               onChange={handleInputChange}
@@ -61,7 +61,7 @@ const AccountRegister = ({
             ></input>
             <div className="form-check">
               <input
-                className="form-check-input"
+                className="form-check-input zoom-fx"
                 type="checkbox"
                 id="flexCheckChecked"
                 //name="typeAccount"
@@ -71,22 +71,22 @@ const AccountRegister = ({
                   console.log(checked);
                 }}
               />
-              <label className="form-check-label">Cuenta propia</label>
+              <label className="form-check-label zoom-fx">Cuenta propia</label>
             </div>
-            <p className="pLabels">Titular de la cuenta</p>
+            <p className="pLabels zoom-fx">Titular de la cuenta</p>
             <input
-              className="form-control"
+              className="form-control zoom-fx"
               type="text"
               name="client"
               onChange={handleInputChange}
               required
             ></input>
             <br />
-            <p className="pLabels">
+            <p className="pLabels zoom-fx">
               Monto máximo que autorizas pagar a este beneficiario:
             </p>
             <div className="input-group mb-3 input-amount">
-              <span className="input-group-text">MXN</span>
+              <span className="input-group-text zoom-fx">MXN</span>
               <input
                 type="text"
                 aria-label="Amount (to the nearest dollar)"
@@ -96,7 +96,7 @@ const AccountRegister = ({
               />
             </div>
             <br />
-            <p className="pLabels">Correo electrónico (opcional):</p>
+            <p className="pLabels zoom-fx">Correo electrónico (opcional):</p>
             <input
               type="email"
               className="form-control"
@@ -104,17 +104,17 @@ const AccountRegister = ({
               onChange={handleInputChange}
               required
             ></input>
-            <p className="pLabels">Confirmar correo electrónico:</p>
+            <p className="pLabels zoom-fx">Confirmar correo electrónico:</p>
             <input type="email" className="form-control"
             required></input>
           </div>
           <div className="transferButtons">
-            <button type="submit" className="continue">
+            <button type="submit" className="continue zoom-fx">
               Continuar
             </button>
             <button
               type="button"
-              className="cancel"
+              className="cancel zoom-fx"
               onClick={() => {
                 navigate("/services");
               }}

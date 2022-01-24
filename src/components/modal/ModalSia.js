@@ -35,6 +35,12 @@ const switchTheme = (e) => {
         }
       }
 
+const activeZoom=() =>{
+  const nodeList = document.querySelectorAll(".zoom-fx");
+  for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].classList.add("zoom-Txt");}
+}
+
   return (
     <>
       <button
@@ -61,19 +67,19 @@ const switchTheme = (e) => {
             <div className="modal-header">
               <button
                 type="button"
-                className="btn-close"
+                className="btn-close "
                 data-bs-dismiss="modal"
                 aria-label="cerrar"
               ></button>
             </div>
             <div className="modal-body">
               <button className={theme === "dark" ? clickedClass:""} id="darkmode" onClick={(e) => { switchTheme(e)}}>
-                <img src="https://i.ibb.co/0QC1rGZ/luna.png" alt="luna" />
+                <img src="https://i.ibb.co/0QC1rGZ/luna.png" alt="Modo contraste" />
                 Modo oscuro
                 <br />
                 (Contraste)
               </button>
-              <button className="btn-sia">
+              <button className="btn-sia" id="zoom" onClick={() => { activeZoom()}} >
                 <img
                   src="https://i.ibb.co/wgpxC7D/Dise-o-sin-t-tulo-17-1.png"
                   alt="zoom al texto"

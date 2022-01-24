@@ -6,7 +6,7 @@ import { OfertasHome } from "./OfertasHome";
 export const Main = ({ resultRetirement }) => {
   return (
     <main>
-      <div className="main-container">
+      <div className="main-container ">
       <OfertasHome resultRetirement={resultRetirement} />
       <LateralMenuHome />
       <ModalSia />

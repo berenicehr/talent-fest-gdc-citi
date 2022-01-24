@@ -3,13 +3,12 @@ $banamex-blue: #056dae;
 $shadow-gray: #bebaba;
 $size-titles: 20px;
 
-
 .btn-accesibility {
   border: none;
+  border-radius: 50%;
   background-color: transparent;
   width: 8vw;
-  height: 8vw; 
-
+  height: 8vw;
   img {
     width: 7vw;
     height: 7vw;
@@ -45,7 +44,7 @@ $size-titles: 20px;
           size: 1.2rem;
           weight: 500;
         }
-        
+
         border: {
           style: dashed;
           radius: 2vh;
@@ -75,4 +74,23 @@ $size-titles: 20px;
     color: $banamex-blue;
   }
   background-color: transparent;
+}
+
+#darkmode:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.zoom-Txt{
+  transition: transform .3s;
+  background-color: firebrick;
+  
+}
+
+.zoom-Txt:hover{
+  -webkit-transform: scale(1.5);
+  position: sticky;
+  background-color: rgba(0, 0, 0, 0.644);
+  color:blanchedalmond !important;
 }
