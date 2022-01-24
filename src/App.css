@@ -6,6 +6,10 @@
     --navBarDark: #213946;
     
 }
+h2,h1{ 
+    width: 50vh;
+}
+
 
 body {
     background-color: var(--background-color);

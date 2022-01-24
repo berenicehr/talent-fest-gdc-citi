@@ -36,7 +36,7 @@ const switchTheme = (e) => {
       }
 
 const activeZoom=() =>{
-  const nodeList = document.querySelectorAll(".zoom-fx");
+  const nodeList = document.querySelectorAll("h1, h2, p, a, input, label, button, select");
   for (let i = 0; i < nodeList.length; i++) {
     nodeList[i].classList.add("zoom-Txt");}
 }

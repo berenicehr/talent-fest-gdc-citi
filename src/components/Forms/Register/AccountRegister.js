@@ -29,7 +29,7 @@ const AccountRegister = ({
           sendData(e)
         navigate('/services/verification')}}>
           <h1 className="zoom-fx">Alta de cuenta Citibanamex</h1>
-          <p className="zoom-fx" >Indica los datos del alta y da click en "Continuar</p>
+          <p className="zoom-fx  sm" >Indica los datos del alta y da click en "Continuar</p>
           <br />
           <br />
           <div className="container">
@@ -51,7 +51,7 @@ const AccountRegister = ({
               </select>
             </div>
             <br />
-            <p className="pLabels zoom-fx">Numero de tarjeta:</p>
+            <p className="pLabels zoom-fx sm">Numero de tarjeta:</p>
             <input
               className="form-control zoom-fx"
               type="text"
@@ -71,9 +71,9 @@ const AccountRegister = ({
                   console.log(checked);
                 }}
               />
-              <label className="form-check-label zoom-fx">Cuenta propia</label>
+              <label className="form-check-label zoom-fx sm">Cuenta propia</label>
             </div>
-            <p className="pLabels zoom-fx">Titular de la cuenta</p>
+            <p className="pLabels zoom-fx sm">Titular de la cuenta</p>
             <input
               className="form-control zoom-fx"
               type="text"
@@ -82,12 +82,13 @@ const AccountRegister = ({
               required
             ></input>
             <br />
-            <p className="pLabels zoom-fx">
+            <p className="pLabels zoom-fx sm">
               Monto máximo que autorizas pagar a este beneficiario:
             </p>
             <div className="input-group mb-3 input-amount">
               <span className="input-group-text zoom-fx">MXN</span>
               <input
+                className="zoom-fx"
                 type="text"
                 aria-label="Amount (to the nearest dollar)"
                 name="maximumAmount"
@@ -96,16 +97,16 @@ const AccountRegister = ({
               />
             </div>
             <br />
-            <p className="pLabels zoom-fx">Correo electrónico (opcional):</p>
+            <p className="pLabels zoom-fx sm">Correo electrónico (opcional):</p>
             <input
               type="email"
-              className="form-control"
+              className="form-control zoom-fx"
               name="email"
               onChange={handleInputChange}
               required
             ></input>
-            <p className="pLabels zoom-fx">Confirmar correo electrónico:</p>
-            <input type="email" className="form-control"
+            <p className="pLabels zoom-fx sm">Confirmar correo electrónico:</p>
+            <input type="email" className="form-control zoom-fx"
             required></input>
           </div>
           <div className="transferButtons">
