@@ -5,14 +5,14 @@ import { NavUser } from "./NavUser";
 export const HeaderNav = () => {
   const date = new Date();
   return (
-    <header>
+    <header className="header-nav">
       <section className="section-nav">
-        <p>{date.toUTCString()}</p>
+        <p className="zoom-fx">{date.toUTCString()}</p>
 
-        <ul className="nav nav-pills">
-          <li className="nav-item">
+        <ul className="nav nav-pills ">
+          <li className="nav-item ">
             <a
-              className="nav-link active"
+              className="nav-link active zoom-fx"
               aria-current="page"
               href="https://www.banamex.com/es/localizador-sucursales.html"
             >
@@ -21,10 +21,11 @@ export const HeaderNav = () => {
           </li>
           <li className="float-left">|</li>
           <li className="nav-item dropdown">
+          
             <a
-              className="nav-link dropdown-toggle"
+              className="nav-link dropdown-toggle zoom-fx"
               data-bs-toggle="dropdown"
-              href="#"
+              href="algo"
               role="button"
               aria-expanded="false"
             >
@@ -41,7 +42,7 @@ export const HeaderNav = () => {
               </li>
               <li>
                 <a
-                  className="dropdown-item"
+                  className="dropdown-item zoom-fx"
                   href="https://bancanet.banamex.com/contacto/queremos-escucharte.html"
                 >
                   <i className="bi bi-telephone-outbound-fill"></i>Queremos
@@ -53,7 +54,7 @@ export const HeaderNav = () => {
           <li className="float-left">|</li>
           <li className="nav-item">
             <a
-              className="nav-link nav-help"
+              className="nav-link nav-help zoom-fx"
               href="https://www.banamex.com/SoporteBanamex/index.html?lid=MX|BNP3|MULTISALDOS-TextoBotton-02102017-AyudaBNP-irLearningCenter-ES"
             >
               AYUDA
@@ -70,19 +71,19 @@ export const HeaderNav = () => {
         <ul>
           <li className="float">
             |
-            <a className="bancanet" href="https://www.banamex.com/">
+            <a className="bancanet zoom-fx" href="https://www.banamex.com/">
               BancaNet
             </a>
           </li>
         </ul>
         <img src={logOut} alt="logOut" className="logo-out" />
-        <p className="text-logout">Cerrar sesión</p>
+        <p className="text-logout zoom-fx">Cerrar sesión</p>
       </section>
       <section className="container-welcome">
-        <h2 className="welcome"> ¡Hola usuario!</h2>
-        <p className= "last-access">último acceso {date.toDateString()}</p>
+        <h1 className="welcome zoom-fx"> ¡Hola usuario!</h1>
+        <p className="last-access zoom-fx">último acceso {date.toDateString()}</p>
       </section>
-      <NavUser/>
+      <NavUser />
     </header>
   );
 };
